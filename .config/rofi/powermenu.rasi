@@ -1,0 +1,39 @@
+@import "config.rasi"
+
+configuration {
+    modi: "power:~/.config/rofi/powermenu.py";
+}
+
+inputbar {
+    children: [dummy,prompt,dummy];
+}
+
+dummy {
+    background-color: transparent;
+}
+
+prompt {
+    background-color: @surface0;
+    text-color: @subtext1;
+    font: "TerminessTTF Nerd Font 14";
+}
+
+listview {
+    lines: 1;
+    columns: 3;
+    cycle: true;
+}
+
+element {
+    padding: 40px 10px;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    font: "TerminessTTF Nerd Font 16";
+}
+
+element selected {
+    background-color: @green;
+    text-color: @mantle;
+}

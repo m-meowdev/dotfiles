@@ -1,0 +1,5 @@
+@import "config.rasi"
+
+configuration {
+    modi: "radio:~/.config/rofi/radiomenu.py";
+}

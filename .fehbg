@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/blorbo/wallpapers/wallhaven-722x8o.png' 

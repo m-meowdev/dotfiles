@@ -1,3 +1,7 @@
+import catppuccin
+
+colorscheme = "catppuccin"
+
 config.load_autoconfig(False)
 
 c.aliases = {
@@ -6,11 +10,22 @@ c.aliases = {
     "wq": "quit --save",
 }
 
-config.source("gruvbox.py")
+if colorscheme == "catppuccin":
+    catppuccin.setup(c, "mocha")
+else:
+    config.source(colorscheme + ".py")
+
 c.colors.webpage.darkmode.enabled = True
-c.colors.webpage.darkmode.threshold.background = 205
+c.colors.webpage.darkmode.algorithm = "lightness-hsl"
+c.colors.webpage.darkmode.contrast = -.022
+c.colors.webpage.darkmode.threshold.background = 100
 c.colors.webpage.darkmode.threshold.text = 150
+c.colors.webpage.darkmode.policy.images = "always"
+c.colors.webpage.darkmode.grayscale.images = 0.35
 c.colors.webpage.preferred_color_scheme = "dark"
+
+c.fonts.default_family = "TerminessTTF Nerd Font"
+c.fonts.default_size = "11pt"
 
 c.completion.web_history.exclude = ["*://duckduckgo.com/*"]
 

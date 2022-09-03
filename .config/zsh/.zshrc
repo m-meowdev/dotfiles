@@ -1,11 +1,12 @@
 # environment variables
-export TERM="alacritty"
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 export EDITOR="nvim"
 export HISTFILE=~/.local/state/zsh/history
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export XINITRC=~/.config/X11/xinitrc
 export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
+export PATH=$PATH:~/.local/bin
+export MANPAGER="nvim +Man!"
 
 # plugins
 plugdir=~/.config/zsh/plugins

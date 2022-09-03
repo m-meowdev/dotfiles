@@ -1,0 +1,34 @@
+{
+    "mocha": {
+        "bar": "#181825",
+        "text": "#bac2de",
+        "active": "#9399b2",
+        "inactive": "#45475a",
+        "color1": "#a6e3a1",
+        "color2": "#1e1e2e"
+    },
+    "macchiato": {
+        "bar": "#1e2030",
+        "text": "#b8c0e0",
+        "active": "#939ab7",
+        "inactive": "#494d64",
+        "color1": "#a6da95",
+        "color2": "#24273a"
+    },
+    "frappe": {
+        "bar": "#292c3c",
+        "text": "#b5bfe2",
+        "active": "#949cbb",
+        "inactive": "#51576d",
+        "color1": "#a6d189",
+        "color2": "#303446"
+    },
+    "latte": {
+        "bar": "#e6e9ef",
+        "text": "#5c5f77",
+        "active": "#6c6f85",
+        "inactive": "#ccd0da",
+        "color1": "#40a02b",
+        "color2": "#9ca0b0"
+    }
+}

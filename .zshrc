@@ -1,15 +1,12 @@
 # environment variables
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 export EDITOR="nvim"
-export HISTFILE=~/.local/state/zsh/history
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
-export XINITRC=~/.config/X11/xinitrc
-export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export PATH=$PATH:~/.local/bin
 export MANPAGER="nvim +Man!"
 
 # plugins
-plugdir=~/.config/zsh/plugins
+plugdir=~/.local/share/zsh/plugins
 source $plugdir/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # vim-like keybindings
@@ -41,10 +38,10 @@ alias yaclean="yay -Sc"
 alias l="exa --long --all --group-directories-first" # file listing
 alias md="mkdir -p" # making directories
 alias vim="nvim" # replace vim with nvim
-alias dots="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME" # dotfile management
+alias dots="/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME" # dotfile management
 
 # starship prompt
 eval "$(starship init zsh)"
 
 # random pokemon on terminal open
-krabby random -i
+#krabby random -i

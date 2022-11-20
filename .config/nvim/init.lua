@@ -1,6 +1,0 @@
-require("packer")
-require("plugins")
-require("options")
-require("keymaps")
-require("lsp")
-require("colors")
